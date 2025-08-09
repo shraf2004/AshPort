@@ -519,3 +519,36 @@ body.resume-page {
   box-shadow: 0 0 20px #00ffc8;
 }
 
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .intro-text h1 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+  .intro-text p {
+    font-size: 0.95rem;
+  }
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+  .profile-img {
+    margin: 20px auto 0;
+  }
+  .profile-img img {
+    width: 180px;
+    height: 180px;
+    margin: 0;
+  }
+  .nav-links, .social-icons {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
