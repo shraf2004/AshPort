@@ -67,6 +67,10 @@ body {
 .intro-text h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+
+    background: linear-gradient(to right, #a200ff, #ff4ecb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .intro-text p {
@@ -98,6 +102,9 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 200px;
+    box-shadow: 0 0 25px rgba(115, 0, 255, 0.8),
+                0 0 50px rgba(115, 0, 255, 0.8),
+                0 0 75px rgba(115, 0, 255, 0.8);
 }
 
 .brands {
