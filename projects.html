@@ -4,76 +4,116 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects | Ashraful Islam Tutul</title>
+
+  <!-- This MUST stay exactly like this -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="projects-page">
 
-    <div class="nav-container">
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="involve.html">Involvement & Experience</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="about.html">About me</a></li>
-      </ul>
-      <div class="social-icons">
-  <a href="https://github.com/shraf2004" target="_blank" aria-label="GitHub">
-    <i class="fab fa-github"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/shraf/" target="_blank" aria-label="LinkedIn">
-    <i class="fab fa-linkedin-in"></i>
-  </a>
-  <a href="https://www.youtube.com/@ashrafatlantic" target="_blank" aria-label="YouTube">
-    <i class="fab fa-youtube"></i>
-  </a>
-</div>
+  <!-- Navbar -->
+  <div class="nav-container">
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="involve.html">Involvement & Experience</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="about.html">About me</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://github.com/shraf2004" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/shraf/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.youtube.com/@ashrafatlantic" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
 
-    </div>
-  </nav>
-</div>
+  <!-- Dark overlay on background image (optional, matches your CSS) -->
+  <div class="image-overlay"></div>
 
-  <section class="projects-section">
-  <h1 class="section-title">My Projects</h1>
+  <!-- Main content -->
+  <div class="content-wrapper">
+    <section class="projects-section">
+      <h1 class="section-title">My Projects</h1>
 
+      <!-- Cognito-Weave -->
+      <div class="project-card">
+        <h2>🧠 Cognito-Weave (HackHarvard, Harvard University)</h2>
+        <p class="repo-links">
+          🔗 
+          <!-- Update these links when you have them -->
+          <a href="https://cognito-weave.onrender.com/" target="_blank">Live Site</a> &nbsp; | &nbsp;
+          <a href="https://github.com/shraf2004/Cognito-Weave" target="_blank">GitHub Repo</a>
+        </p>
+        <ul>
+          <li>Built a voice-enabled, multilingual memory app that guides users through quick warm-up questions and timed recall sessions.</li>
+          <li>Visualized memory progress with bar charts so users and caregivers can quickly track improvement over time.</li>
+          <li>Implemented a secure caregiver access system using unique codes, allowing them to view progress and leave supportive notes.</li>
+          <li>Designed for people managing memory challenges while keeping the interface calm, encouraging, and easy to use.</li>
+        </ul>
+      </div>
 
-  <div class="project-card">
-  <h2>TruFind – Lost & Found Web App</h2>
-  <p class="repo-links">
-    🔗 <a href="https://shraf2004.github.io/TruFindFrontend/" target="_blank">Live Site</a> &nbsp; | &nbsp;
-    <a href="https://github.com/shraf2004/TruFindFrontend" target="_blank">Frontend Code</a> &nbsp; | &nbsp;
-    <a href="https://github.com/shraf2004/TruFindBackend" target="_blank">Backend Code</a>
-  </p>
-  <ul>
-    <li>Developed a full-stack lost-and-found platform using HTML, CSS, JavaScript, Node.js (Express), and PostgreSQL.</li>
-    <li>Integrated email verification with Nodemailer and secure user authentication using bcrypt.</li>
-    <li>Implemented image uploads via Cloudinary, protected routes, and real-time cross-device interaction.</li>
-    <li>Frontend deployed via GitHub Pages and backend via Render.</li>
-  </ul>
-</div>
+      <!-- Polyglot Note-Taker -->
+      <div class="project-card">
+        <h2>🌍 Polyglot Note-Taker Extension (Google Chrome Built-in AI Challenge 2025)</h2>
+        <p class="repo-links">
+          🔗 
+          <a href="https://github.com/shraf2004/Polyglot-Note-Taker" target="_blank">GitHub Repo</a>
+        </p>
+        <ul>
+          <li>Developed a Chrome side-panel study assistant that lives next to any webpage and helps students process content faster.</li>
+          <li>Used Chrome’s built-in AI (Summarizer, Translator, and local language models) to turn any text into clean summaries, translations, and structured notes.</li>
+          <li>Generated quizzes and topic-based sources directly from the selected text to support active learning and revision.</li>
+          <li>Built an interface with state saving, theme switching, and history tracking so users can revisit previous sessions.</li>
+        </ul>
+      </div>
 
+      <!-- TruFind – Lost & Found Web App -->
+      <div class="project-card">
+        <h2>TruFind – Lost &amp; Found Web App</h2>
+        <p class="repo-links">
+          🔗 
+          <a href="https://shraf2004.github.io/TruFindFrontend/" target="_blank">Live Site</a> &nbsp; | &nbsp;
+          <a href="https://github.com/shraf2004/TruFindFrontend" target="_blank">Frontend Code</a> &nbsp; | &nbsp;
+          <a href="https://github.com/shraf2004/TruFindBackend" target="_blank">Backend Code</a>
+        </p>
+        <ul>
+          <li>Developed a full stack lost-and-found platform for Truman State University using HTML, CSS, JavaScript, Node.js (Express), and PostgreSQL, with email verification via Nodemailer and image uploads via Cloudinary.</li>
+          <li>Implemented secure user authentication with bcrypt, email code verification, post creation/deletion, and protected routes.</li>
+          <li>Deployed the frontend via GitHub Pages and the backend API and PostgreSQL database via Render.</li>
+        </ul>
+      </div>
 
+      <!-- TruHacks Hackathon project -->
+      <div class="project-card">
+        <h2>💡 TruHacks Hackathon (SDG 4 - Quality Education)</h2>
+        <p class="repo-links">
+          🔗 <a href="https://shraf2004.github.io/SDG4/" target="_blank">Live Site</a> &nbsp; | &nbsp;
+          <a href="https://github.com/shraf2004/SDG4" target="_blank">GitHub Repo</a>
+        </p>
+        <ul>
+          <li>Developed a website during Truman’s official hackathon "TruHacks" focused on SDG 4: Quality Education.</li>
+          <li><strong>Theme:</strong> Promoting accessible education and digital inclusion.</li>
+          <li><strong>Role:</strong> Web developer and team collaborator, contributing to both design and implementation.</li>
+          <li>Delivered a working prototype under a 48-hour hackathon timeline.</li>
+        </ul>
+      </div>
 
-
-    <div class="project-card">
-  <h2>💡 TruHacks Hackathon (SDG 4 - Quality Education)</h2>
-  <p class="repo-links">
-    🔗 <a href="https://shraf2004.github.io/SDG4/" target="_blank">Live Site</a> &nbsp; | &nbsp;
-    <a href="https://github.com/shraf2004/SDG4" target="_blank">GitHub Repo</a>
-  </p>
-  <ul>
-    <li>Developed a website during Truman’s official hackathon "TruHacks"</li>
-    <li><strong>Theme:</strong> Promoting accessible education and digital inclusion</li>
-    <li><strong>Role:</strong> Web developer & team collaborator</li>
-    <li>Contributed to both design and implementation under 48 hours</li>
-  </ul>
-</div>
-
-  </section>
+    </section>
+  </div>
 
 </body>
 </html>
