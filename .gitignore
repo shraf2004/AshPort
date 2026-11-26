@@ -28,3 +28,6 @@ uploads/*
 Thumbs.db
 
 
+
+.preview-browser/
+preview-*.png

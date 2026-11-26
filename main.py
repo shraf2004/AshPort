@@ -1,11 +1,17 @@
 from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse, HTMLResponse
 
 
 BASE_DIR = Path(__file__).resolve().parent
-UPLOAD_DIR = BASE_DIR / "uploads"
+PUBLIC_FILES = {
+    "about.html", "contact.html", "education.html", "index.html",
+    "involve.html", "projects.html", "research.html", "resume.html", "skills.html",
+    "portfolio.css", "portfolio.js", "favicon.svg", "Ash.pdf",
+    "img.jpg", "david.jpg", "HackHarvard.jpg", "team.jpg", "Harvard.jpg",
+    "mit.jpg", "john harvard.jpg",
+}
 app = FastAPI(title="Ashraful Islam Tutul | Portfolio")
 
 
@@ -18,7 +24,7 @@ async def read_root():
 @app.get("/uploads/Resume.pdf", response_class=FileResponse)
 async def download_resume():
     return FileResponse(
-        UPLOAD_DIR / "Resume.pdf",
+        BASE_DIR / "Ash.pdf",
         media_type="application/pdf",
         filename="Ashraful_Islam_Tutul_Resume.pdf",
     )
@@ -32,6 +38,13 @@ async def profile_photo():
 @app.get("/health")
 async def health_check():
     return {"status": "ok"}
+
+
+@app.get("/{filename}", response_class=FileResponse)
+async def public_file(filename: str):
+    if filename not in PUBLIC_FILES:
+        raise HTTPException(status_code=404)
+    return FileResponse(BASE_DIR / filename)
 
 
 if __name__ == "__main__":
